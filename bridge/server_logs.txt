@@ -1,0 +1,580 @@
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26.08.2020 2:34:19
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting NeptuneEVO resource..
+NeptuneEVO: loading scripts.. found 2 script(s)
+NeptuneEVO: instantiating NeptuneEvo.Main..
+NeptuneEVO: instantiating NeptuneEvo.Trigger..
+NeptuneEVO: instantiating NeptuneEvo.Voice.Voice..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Bank..
+-> Error starting 'NeptuneEVO'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 327
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 584
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 314
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 273
+   at DataTable Redage.SDK.MySQL.QueryRead(MySqlCommand command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 157
+   at DataTable Redage.SDK.MySQL.QueryRead(string command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 177
+   at new NeptuneEvo.MoneySystem.Bank() in K:\projects\gta5\bridge\resources\NeptuneEvo\MoneySystem\Bank.cs:line 34
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at GTANetworkInternals.GameServer.<InstantiateScripts>d__61.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String parent)
+
+-> Starting NeptuneEVOSDK resource..
+NeptuneEVOSDK: loading scripts.. found 1 script(s)
+NeptuneEVOSDK: loading exported functions.. found 1 exported function(s)
+-> Resource NeptuneEVOSDK started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26.08.2020 2:36:16
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting NeptuneEVO resource..
+NeptuneEVO: loading scripts.. found 2 script(s)
+NeptuneEVO: instantiating NeptuneEvo.Main..
+NeptuneEVO: instantiating NeptuneEvo.Trigger..
+NeptuneEVO: instantiating NeptuneEvo.Voice.Voice..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Bank..
+-> Error starting 'NeptuneEVO'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 327
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 584
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 314
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 273
+   at DataTable Redage.SDK.MySQL.QueryRead(MySqlCommand command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 157
+   at DataTable Redage.SDK.MySQL.QueryRead(string command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 177
+   at new NeptuneEvo.MoneySystem.Bank() in K:\projects\gta5\bridge\resources\NeptuneEvo\MoneySystem\Bank.cs:line 34
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at GTANetworkInternals.GameServer.<InstantiateScripts>d__61.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String parent)
+
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26.08.2020 17:14:31
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting NeptuneEVO resource..
+NeptuneEVO: loading scripts.. found 2 script(s)
+NeptuneEVO: instantiating NeptuneEvo.Main..
+NeptuneEVO: instantiating NeptuneEvo.Trigger..
+NeptuneEVO: instantiating NeptuneEvo.Voice.Voice..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Bank..
+-> Error starting 'NeptuneEVO'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 327
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 584
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 314
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 273
+   at DataTable Redage.SDK.MySQL.QueryRead(MySqlCommand command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 157
+   at DataTable Redage.SDK.MySQL.QueryRead(string command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 177
+   at new NeptuneEvo.MoneySystem.Bank() in K:\projects\gta5\bridge\resources\NeptuneEvo\MoneySystem\Bank.cs:line 34
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at GTANetworkInternals.GameServer.<InstantiateScripts>d__61.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String parent)
+
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26.08.2020 17:16:25
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting NeptuneEVO resource..
+NeptuneEVO: loading scripts.. found 2 script(s)
+NeptuneEVO: instantiating NeptuneEvo.Main..
+NeptuneEVO: instantiating NeptuneEvo.Trigger..
+NeptuneEVO: instantiating NeptuneEvo.Voice.Voice..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Bank..
+-> Error starting 'NeptuneEVO'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 327
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 584
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 314
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 273
+   at DataTable Redage.SDK.MySQL.QueryRead(MySqlCommand command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 157
+   at DataTable Redage.SDK.MySQL.QueryRead(string command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 177
+   at new NeptuneEvo.MoneySystem.Bank() in K:\projects\gta5\bridge\resources\NeptuneEvo\MoneySystem\Bank.cs:line 34
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at GTANetworkInternals.GameServer.<InstantiateScripts>d__61.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String parent)
+
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26.08.2020 17:16:48
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting NeptuneEVO resource..
+NeptuneEVO: loading scripts.. found 2 script(s)
+NeptuneEVO: instantiating NeptuneEvo.Main..
+NeptuneEVO: instantiating NeptuneEvo.Trigger..
+NeptuneEVO: instantiating NeptuneEvo.Voice.Voice..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Bank..
+-> Error starting 'NeptuneEVO'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 327
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 584
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 314
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 273
+   at DataTable Redage.SDK.MySQL.QueryRead(MySqlCommand command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 157
+   at DataTable Redage.SDK.MySQL.QueryRead(string command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 177
+   at new NeptuneEvo.MoneySystem.Bank() in K:\projects\gta5\bridge\resources\NeptuneEvo\MoneySystem\Bank.cs:line 34
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at GTANetworkInternals.GameServer.<InstantiateScripts>d__61.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String parent)
+
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26.08.2020 17:22:53
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting NeptuneEVO resource..
+NeptuneEVO: loading scripts.. found 2 script(s)
+NeptuneEVO: instantiating NeptuneEvo.Main..
+NeptuneEVO: instantiating NeptuneEvo.Trigger..
+NeptuneEVO: instantiating NeptuneEvo.Voice.Voice..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Bank..
+-> Error starting 'NeptuneEVO'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 327
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 584
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 314
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 273
+   at DataTable Redage.SDK.MySQL.QueryRead(MySqlCommand command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 157
+   at DataTable Redage.SDK.MySQL.QueryRead(string command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 177
+   at new NeptuneEvo.MoneySystem.Bank() in K:\projects\gta5\bridge\resources\NeptuneEvo\MoneySystem\Bank.cs:line 34
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at GTANetworkInternals.GameServer.<InstantiateScripts>d__61.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String parent)
+
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26.08.2020 17:23:22
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting NeptuneEVO resource..
+NeptuneEVO: loading scripts.. found 2 script(s)
+NeptuneEVO: instantiating NeptuneEvo.Main..
+NeptuneEVO: instantiating NeptuneEvo.Trigger..
+NeptuneEVO: instantiating NeptuneEvo.Voice.Voice..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Bank..
+-> Error starting 'NeptuneEVO'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   at async Task MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 327
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at async ValueTask<ServerSession> MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async ValueTask<ServerSession> MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 584
+   at TResult System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>+ConfiguredValueTaskAwaiter.GetResult()
+   at async Task MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable<IOBehavior> ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 314
+   at void MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 273
+   at DataTable Redage.SDK.MySQL.QueryRead(MySqlCommand command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 157
+   at DataTable Redage.SDK.MySQL.QueryRead(string command) in K:\projects\gta5\bridge\resources\NeptuneEvoSDK\MySQL.cs:line 177
+   at new NeptuneEvo.MoneySystem.Bank() in K:\projects\gta5\bridge\resources\NeptuneEvo\MoneySystem\Bank.cs:line 34
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at GTANetworkInternals.GameServer.<InstantiateScripts>d__61.MoveNext()
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String parent)
+
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26.08.2020 17:25:33
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting NeptuneEVO resource..
+NeptuneEVO: loading scripts.. found 2 script(s)
+NeptuneEVO: instantiating NeptuneEvo.Main..
+NeptuneEVO: instantiating NeptuneEvo.Trigger..
+NeptuneEVO: instantiating NeptuneEvo.Voice.Voice..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Bank..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.ATM..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Casino..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Donations..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Wallet..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.AutoMechanic..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Bus..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Collector..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Electrician..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Gopostal..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Lawnmower..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Taxi..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Truckers..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.WorkManager..
+NeptuneEVO: instantiating NeptuneEvo.Houses.GarageManager..
+NeptuneEVO: instantiating NeptuneEvo.Houses.Hotel..
+NeptuneEVO: instantiating NeptuneEvo.Houses.FurnitureManager..
+NeptuneEVO: instantiating NeptuneEvo.Houses.HouseManager..
+NeptuneEVO: instantiating NeptuneEvo.GUI.Dashboard..
+NeptuneEVO: instantiating NeptuneEvo.GUI.Docs..
+NeptuneEVO: instantiating NeptuneEvo.GUI.MenuManager..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Army..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Cityhall..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Configs..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.CarDelivery..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.ElectionsSystem..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Ems..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.AlcoFabrication..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Fbi..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.FractionCommands..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Manager..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Stocks..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.MatsWar..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.GangsCapture..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Gangs..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.LSNews..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Mafia..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.MafiaWars..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Merryweather..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Police..
+NeptuneEVO: instantiating NeptuneEvo.Core.Admin..
+NeptuneEVO: instantiating NeptuneEvo.Core.AdminSP..
+NeptuneEVO: instantiating NeptuneEvo.Core.BasicSync..
+NeptuneEVO: instantiating NeptuneEvo.Core.BusinessManager..
+NeptuneEVO: instantiating NeptuneEvo.Core.CarRoom..
+NeptuneEVO: instantiating NeptuneEvo.Core.Commands..
+NeptuneEVO: instantiating NeptuneEvo.Core.Customization..
+NeptuneEVO: instantiating NeptuneEvo.Core.Dimensions..
+NeptuneEVO: instantiating NeptuneEvo.Core.Doormanager..
+NeptuneEVO: instantiating NeptuneEvo.Core.DrivingSchool..
+NeptuneEVO: instantiating NeptuneEvo.Core.EventSys..
+NeptuneEVO: instantiating NeptuneEvo.Core.Fingerpointing..
+NeptuneEVO: instantiating NeptuneEvo.Core.nInventory..
+NeptuneEVO: instantiating NeptuneEvo.Core.Items..
+NeptuneEVO: instantiating NeptuneEvo.Core.Rentcar..
+NeptuneEVO: instantiating NeptuneEvo.Core.ReportSys..
+NeptuneEVO: instantiating NeptuneEvo.Core.SafeMain..
+NeptuneEVO: instantiating NeptuneEvo.Core.SafeZones..
+NeptuneEVO: instantiating NeptuneEvo.Core.Selecting..
+NeptuneEVO: instantiating NeptuneEvo.Core.VehicleManager..
+NeptuneEVO: instantiating NeptuneEvo.Core.VehicleInventory..
+NeptuneEVO: instantiating NeptuneEvo.Core.VehicleStreaming..
+NeptuneEVO: instantiating NeptuneEvo.Core.Weapons..
+NeptuneEVO: instantiating NeptuneEvo.Core.ArmedBody..
+NeptuneEVO: loading server events.. found 7 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 4 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 4 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loaded 87 server events(s)
+NeptuneEVO: loading commands.. found 2 command(s)
+NeptuneEVO: loading commands.. found 3 command(s)
+NeptuneEVO: loading commands.. found 3 command(s)
+NeptuneEVO: loading commands.. found 8 command(s)
+NeptuneEVO: loading commands.. found 2 command(s)
+NeptuneEVO: loading commands.. found 3 command(s)
+NeptuneEVO: loading commands.. found 2 command(s)
+NeptuneEVO: loading commands.. found 202 command(s)
+NeptuneEVO: loading commands.. found 10 command(s)
+NeptuneEVO: loading commands.. found 1 command(s)
+NeptuneEVO: loaded 236 commands(s)
+NeptuneEVO: loading remote events.. found 23 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 4 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 3 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 5 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 6 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 16 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 4 remote event(s)
+NeptuneEVO: loading remote events.. found 4 remote event(s)
+NeptuneEVO: loading remote events.. found 4 remote event(s)
+NeptuneEVO: loaded 102 remote event(s)
+NeptuneEVO: loading exported functions.. found 1 exported function(s)
+-> Resource NeptuneEVO started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26.08.2020 17:27:53
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting NeptuneEVO resource..
+NeptuneEVO: loading scripts.. found 2 script(s)
+NeptuneEVO: instantiating NeptuneEvo.Main..
+NeptuneEVO: instantiating NeptuneEvo.Trigger..
+NeptuneEVO: instantiating NeptuneEvo.Voice.Voice..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Bank..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.ATM..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Casino..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Donations..
+NeptuneEVO: instantiating NeptuneEvo.MoneySystem.Wallet..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.AutoMechanic..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Bus..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Collector..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Electrician..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Gopostal..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Lawnmower..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Taxi..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.Truckers..
+NeptuneEVO: instantiating NeptuneEvo.Jobs.WorkManager..
+NeptuneEVO: instantiating NeptuneEvo.Houses.GarageManager..
+NeptuneEVO: instantiating NeptuneEvo.Houses.Hotel..
+NeptuneEVO: instantiating NeptuneEvo.Houses.FurnitureManager..
+NeptuneEVO: instantiating NeptuneEvo.Houses.HouseManager..
+NeptuneEVO: instantiating NeptuneEvo.GUI.Dashboard..
+NeptuneEVO: instantiating NeptuneEvo.GUI.Docs..
+NeptuneEVO: instantiating NeptuneEvo.GUI.MenuManager..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Army..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Cityhall..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Configs..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.CarDelivery..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.ElectionsSystem..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Ems..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.AlcoFabrication..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Fbi..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.FractionCommands..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Manager..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Stocks..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.MatsWar..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.GangsCapture..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Gangs..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.LSNews..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Mafia..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.MafiaWars..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Merryweather..
+NeptuneEVO: instantiating NeptuneEvo.Fractions.Police..
+NeptuneEVO: instantiating NeptuneEvo.Core.Admin..
+NeptuneEVO: instantiating NeptuneEvo.Core.AdminSP..
+NeptuneEVO: instantiating NeptuneEvo.Core.BasicSync..
+NeptuneEVO: instantiating NeptuneEvo.Core.BusinessManager..
+NeptuneEVO: instantiating NeptuneEvo.Core.CarRoom..
+NeptuneEVO: instantiating NeptuneEvo.Core.Commands..
+NeptuneEVO: instantiating NeptuneEvo.Core.Customization..
+NeptuneEVO: instantiating NeptuneEvo.Core.Dimensions..
+NeptuneEVO: instantiating NeptuneEvo.Core.Doormanager..
+NeptuneEVO: instantiating NeptuneEvo.Core.DrivingSchool..
+NeptuneEVO: instantiating NeptuneEvo.Core.EventSys..
+NeptuneEVO: instantiating NeptuneEvo.Core.Fingerpointing..
+NeptuneEVO: instantiating NeptuneEvo.Core.nInventory..
+NeptuneEVO: instantiating NeptuneEvo.Core.Items..
+NeptuneEVO: instantiating NeptuneEvo.Core.Rentcar..
+NeptuneEVO: instantiating NeptuneEvo.Core.ReportSys..
+NeptuneEVO: instantiating NeptuneEvo.Core.SafeMain..
+NeptuneEVO: instantiating NeptuneEvo.Core.SafeZones..
+NeptuneEVO: instantiating NeptuneEvo.Core.Selecting..
+NeptuneEVO: instantiating NeptuneEvo.Core.VehicleManager..
+NeptuneEVO: instantiating NeptuneEvo.Core.VehicleInventory..
+NeptuneEVO: instantiating NeptuneEvo.Core.VehicleStreaming..
+NeptuneEVO: instantiating NeptuneEvo.Core.Weapons..
+NeptuneEVO: instantiating NeptuneEvo.Core.ArmedBody..
+NeptuneEVO: loading server events.. found 7 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 4 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 2 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 4 server event(s)
+NeptuneEVO: loading server events.. found 3 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loading server events.. found 1 server event(s)
+NeptuneEVO: loaded 87 server events(s)
+NeptuneEVO: loading commands.. found 2 command(s)
+NeptuneEVO: loading commands.. found 3 command(s)
+NeptuneEVO: loading commands.. found 3 command(s)
+NeptuneEVO: loading commands.. found 8 command(s)
+NeptuneEVO: loading commands.. found 2 command(s)
+NeptuneEVO: loading commands.. found 3 command(s)
+NeptuneEVO: loading commands.. found 2 command(s)
+NeptuneEVO: loading commands.. found 202 command(s)
+NeptuneEVO: loading commands.. found 10 command(s)
+NeptuneEVO: loading commands.. found 1 command(s)
+NeptuneEVO: loaded 236 commands(s)
+NeptuneEVO: loading remote events.. found 23 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 4 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 3 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 5 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 6 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 16 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 1 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 2 remote event(s)
+NeptuneEVO: loading remote events.. found 4 remote event(s)
+NeptuneEVO: loading remote events.. found 4 remote event(s)
+NeptuneEVO: loading remote events.. found 4 remote event(s)
+NeptuneEVO: loaded 102 remote event(s)
+NeptuneEVO: loading exported functions.. found 1 exported function(s)
+-> Resource NeptuneEVO started!
+Started! Waiting for connections..
