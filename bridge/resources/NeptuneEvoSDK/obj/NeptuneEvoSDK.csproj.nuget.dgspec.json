@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "K:\\projects\\gta5\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj": {}
+    "K:\\projects\\rage-mp-project\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj": {}
   },
   "projects": {
-    "K:\\projects\\gta5\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj": {
+    "K:\\projects\\rage-mp-project\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\projects\\gta5\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
+        "projectUniqueName": "K:\\projects\\rage-mp-project\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
         "projectName": "NeptuneEvoSDK",
-        "projectPath": "K:\\projects\\gta5\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
+        "projectPath": "K:\\projects\\rage-mp-project\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
         "packagesPath": "C:\\Users\\Daniil\\.nuget\\packages\\",
-        "outputPath": "K:\\projects\\gta5\\bridge\\resources\\NeptuneEvoSDK\\obj\\",
+        "outputPath": "K:\\projects\\rage-mp-project\\bridge\\resources\\NeptuneEvoSDK\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

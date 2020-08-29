@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SoP0w8lfiDkp3RY4LSmdF/HvrWmniA3cWWjBRYMQfVMuTxtVkNbi2kA+uknfk8RYHy0bBCepBqatpkK9GxgPMA==",
+  "dgSpecHash": "5FTOZHv+MHFL35GRzbSVYNJVaYLBctUKQdNdy1k2MhonPjwn5wJmftQJK8gvG/tPgs113S04hv3Q9Fk6kVSmOw==",
   "success": true,
-  "projectFilePath": "K:\\projects\\gta5\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
+  "projectFilePath": "K:\\projects\\rage-mp-project\\bridge\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daniil\\.nuget\\packages\\microsoft.netcore.app\\2.0.0\\microsoft.netcore.app.2.0.0.nupkg.sha512",
     "C:\\Users\\Daniil\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.0\\microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",

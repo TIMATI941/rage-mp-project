@@ -273,7 +273,7 @@ namespace NeptuneEvo.Core
                 }
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, "Вы успешно установили маркер на карту.", 5000);
             }
-            catch { }
+            catch (Exception e) { Log.Write("EXCEPTION AT \"CMD_acceptrob\":\n" + e.ToString(), nLog.Type.Error); }
         }
 
         [Command("findtrailer")]
